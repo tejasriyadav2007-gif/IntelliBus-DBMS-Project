@@ -1,0 +1,21 @@
+INTELLIBUS — START HERE (Windows)
+
+1. Install/start Docker Desktop and install Node.js 20+.
+2. Open this intellibus folder in VS Code.
+3. Open Terminal > New Terminal (PowerShell).
+4. Run these commands one by one:
+
+   Copy-Item .env.example .env
+   docker compose up -d
+   npm install
+   npm run db:setup
+   npm run dev
+
+5. Open http://localhost:5173
+6. Admin demo: admin@intellibus.demo / Admin@123
+
+The API health page is http://localhost:4000/api/health
+
+All buses, routes, schedules and payment flows are demo data for the DBMS project.
+No real payment is collected and no external live bus inventory is connected.
+See README.md for details and troubleshooting.
